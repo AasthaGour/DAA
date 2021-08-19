@@ -1,5 +1,4 @@
 #include<iostream>
-//#include<string>
 using namespace std;
 void sort(char arr[], int n)
 {
@@ -18,7 +17,7 @@ void sort(char arr[], int n)
         { 
             max = freq[i]; 
             result = (char)(i + 'a'); 
-            //cout<<result<<"-"<<max<<endl;
+           
         } 
     }
 
@@ -35,9 +34,7 @@ void sort(char arr[], int n)
 }
 int main()
 {
-	//string s;
-	//getline(cin,s);
-	//cout<<s<<"\n";
+	
 	int n;
 	cin>>n;
 	char arr[n];
@@ -46,11 +43,6 @@ int main()
 	{
 		cin>>arr[i];
 	}
-
-	/*for(int i=0;i<n;i++)
-	{
-		cout<<arr[i]<<endl;
-	}*/
 
 	sort(arr,n);
 
