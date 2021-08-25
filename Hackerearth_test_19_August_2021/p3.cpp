@@ -6,10 +6,10 @@ void find_common(int a1[],int a2[],int n, int m)
 	while(i<n && j<m)
 	{
 	   
-	    while(i<n && (a1[i]==a1[i+1])){
+	    while(i<n && i+1<n && (a1[i]==a1[i+1])){
 	        i++;
 	    }
-	    while(j<m && (a2[j]==a2[j+1])){
+	    while(j<m && j+1<m && (a2[j]==a2[j+1])){
 	        j++;
 	    }
 		if(a1[i]<a2[j])
